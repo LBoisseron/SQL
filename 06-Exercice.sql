@@ -26,4 +26,6 @@
 
 # Afficher l'employé ayant été embauché en dernier.
 #SELECT prenom, nom FROM employes ORDER BY date_embauche DESC LIMIT 0,1;
-SELECT * FROM employes WHERE date_embauche = ( SELECT MAX( date_embauche ) FROM employes );
+#SELECT * FROM employes WHERE date_embauche = ( SELECT MAX( date_embauche ) FROM employes );
+
+# Augmenter de 20%  les 5 salaires qui ont le plus d'ancienneté
